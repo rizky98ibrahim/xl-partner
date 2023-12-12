@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import AOS from 'aos';
 
 const routes = [
     {
@@ -20,7 +21,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    // AOS.init()
+    AOS.init()
     next()
 })
 

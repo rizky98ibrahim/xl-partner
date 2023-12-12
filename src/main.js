@@ -1,12 +1,16 @@
+import './assets/css/styles.scss';
 import { createApp } from 'vue'
-import './assets/css/fontawesome.css'
-import './style.css'
-import './global'
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
 
-// Mounted AOS Init
+// Import Dependencies
+import { tns } from "tiny-slider/src/tiny-slider"
+import GLightbox from 'glightbox';
+import Swiper from 'swiper';
+import feather from 'feather-icons';
+feather.replace();
+
+const app = createApp(App)
 app.use(router)
 app.mount('#app')
